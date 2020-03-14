@@ -68,7 +68,7 @@
 
 
 
-  <meta name="keywords" content="Hexo, NexT" />
+  <meta name="keywords" content="Hexo,encrypt," />
 
 
 
@@ -79,14 +79,21 @@
 
 
 
-<meta property="og:type" content="website">
-<meta property="og:title" content="categories">
-<meta property="og:url" content="http://yoursite.com/categories/index.html">
+<meta name="description" content="使用Github的Pages来托管Hexo的网站，由于项目是公开的，因此网站的所有静态页面以及相关附件文档都可以在Github网站上被公开访问。 如果有些网站内容我们不希望公开，希望将这些静态页面进行加密，让访问者只能凭借密码进行访问，这样的需求可以通过Hexo的插件hexo-blog-encrypt来实现。 具体实施方案如下：">
+<meta property="og:type" content="article">
+<meta property="og:title" content="对Hexo网站进行加密设置">
+<meta property="og:url" content="http://yoursite.com/2020/02/17/encryption-for-hexo-website/index.html">
 <meta property="og:site_name" content="chrisfang的笔记小站">
-<meta property="article:published_time" content="2020-02-03T10:04:07.000Z">
-<meta property="article:modified_time" content="2020-02-03T12:38:02.689Z">
+<meta property="og:description" content="使用Github的Pages来托管Hexo的网站，由于项目是公开的，因此网站的所有静态页面以及相关附件文档都可以在Github网站上被公开访问。 如果有些网站内容我们不希望公开，希望将这些静态页面进行加密，让访问者只能凭借密码进行访问，这样的需求可以通过Hexo的插件hexo-blog-encrypt来实现。 具体实施方案如下：">
+<meta property="og:image" content="http://yoursite.com/images/encryption-for-hexo-website_01.png">
+<meta property="og:image" content="http://yoursite.com/images/encryption-for-hexo-website_02.png">
+<meta property="article:published_time" content="2020-02-16T21:12:00.000Z">
+<meta property="article:modified_time" content="2020-03-14T08:10:47.687Z">
 <meta property="article:author" content="chrisfang">
+<meta property="article:tag" content="Hexo">
+<meta property="article:tag" content="encrypt">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http://yoursite.com/images/encryption-for-hexo-website_01.png">
 
 
 
@@ -116,13 +123,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/categories/"/>
+  <link rel="canonical" href="http://yoursite.com/2020/02/17/encryption-for-hexo-website/"/>
 
 
 
 
 
-  <title>categories | chrisfang的笔记小站</title>
+  <title>对Hexo网站进行加密设置 | chrisfang的笔记小站</title>
   
 
 
@@ -247,40 +254,204 @@
 
   <div id="posts" class="posts-expand">
     
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/02/17/encryption-for-hexo-website/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="chrisfang">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="chrisfang的笔记小站">
+    </span>
+
     
-    
-    <div class="post-block page">
       <header class="post-header">
 
-	<h1 class="post-title" itemprop="name headline">categories</h1>
-
-
-
-</header>
-
-      
-      
-      
-      <div class="post-body">
         
         
-          <div class="category-all-page">
-            <div class="category-all-title">
-                目前共计 2 个分类
-            </div>
-            <div class="category-all">
-              <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/%E6%97%A5%E5%B8%B8%E7%BB%8F%E9%AA%8C/">日常经验</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E7%BD%91%E7%AB%99%E5%BB%BA%E8%AE%BE/">网站建设</a><span class="category-list-count">6</span></li></ul>
-            </div>
-          </div>
+          <h1 class="post-title" itemprop="name headline">对Hexo网站进行加密设置</h1>
         
-      </div>
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2020-02-17T05:12:00+08:00">
+                2020-02-17
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E7%BD%91%E7%AB%99%E5%BB%BA%E8%AE%BE/" itemprop="url" rel="index">
+                    <span itemprop="name">网站建设</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+             <span id="/2020/02/17/encryption-for-hexo-website/" class="leancloud_visitors" data-flag-title="对Hexo网站进行加密设置">
+               <span class="post-meta-divider">|</span>
+               <span class="post-meta-item-icon">
+                 <i class="fa fa-eye"></i>
+               </span>
+               
+                 <span class="post-meta-item-text">阅读次数&#58;</span>
+               
+                 <span class="leancloud-visitors-count"></span>
+             </span>
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
       
       
+
+      
+        <p>使用Github的Pages来托管Hexo的网站，由于项目是公开的，因此网站的所有静态页面以及相关附件文档都可以在Github网站上被公开访问。</p>
+<p>如果有些网站内容我们不希望公开，希望将这些静态页面进行加密，让访问者只能凭借密码进行访问，这样的需求可以通过Hexo的插件<code>hexo-blog-encrypt</code>来实现。</p>
+<p>具体实施方案如下：</p>
+<a id="more"></a>
+
+<h1 id="1-安装插件"><a href="#1-安装插件" class="headerlink" title="1. 安装插件"></a>1. 安装插件</h1><p>打开 Node.js command prompt，在控制台窗口中将路径定位到Hexo网站的目录，然后输入命令：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install --save hexo-blog-encrypt</span><br></pre></td></tr></table></figure>
+
+<h1 id="2-添加密码"><a href="#2-添加密码" class="headerlink" title="2. 添加密码"></a>2. 添加密码</h1><p>为文章设置加密密码有两种方式，一种是在文章信息头当中添加，另一种是通过配置网站的<code>_config.yml</code>文件、根据Tag标签来批量加密（相关文章只允许使用唯一的Tag标签），其中前者的优先级更高。以下内容以第一种加密方式为例进行说明：</p>
+<p>在网站目录下的<code>source</code>&gt;<code>_posts</code>文件夹当中找到文章的MD源文件，使用文本编辑器打开以后可以找到类似以下内容的文章信息头：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">title: 对Hexo网站进行加密设置</span><br><span class="line">author: chrisfang</span><br><span class="line">date: 2020-02-17 05:12:00</span><br><span class="line">---</span><br></pre></td></tr></table></figure>
+<p>在上述文件头信息中添加password字段就可以添加密码了，例如：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">title: 对Hexo网站进行加密设置</span><br><span class="line">author: chrisfang</span><br><span class="line">date: 2020-02-17 05:12:00</span><br><span class="line">password: chrisfang</span><br><span class="line">---</span><br></pre></td></tr></table></figure>
+<p>保存上述设置并发布文章以后，打开此文章的页面时，会提示用户输入密码，显示效果如下图：</p>
+<p><img src="/images/encryption-for-hexo-website_01.png" alt="加密后的显示效果" title="加密后的显示效果"></p>
+<p>输入密码并回车以后，就能显示完整的文章内容了。</p>
+<p>此外，在网站首页的文章列表当中，也不会显示文章内容，而是显示以下的效果：</p>
+<p><img src="/images/encryption-for-hexo-website_02.png" alt="首页的文章显示" title="首页的文章显示"></p>
+<h1 id="3-修改提示"><a href="#3-修改提示" class="headerlink" title="3. 修改提示"></a>3. 修改提示</h1><p>上面两个截图中所显示的文字提示信息，也可以通过设置文章信息头的方式自定义，例如设置成以下内容：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">title: 对Hexo网站进行加密设置</span><br><span class="line">author: chrisfang</span><br><span class="line">date: 2020-02-17 05:12:00</span><br><span class="line">password: chrisfang</span><br><span class="line">abstract: 内容提要：介绍文章加密访问的方法</span><br><span class="line">message: 请输入密码</span><br><span class="line">---</span><br></pre></td></tr></table></figure>
+<p>其中<code>abstract</code>指的就是首页当中显示的文章预览内容，可以设置成内容提要的形式；<code>message</code>指的就是文章页面当中的输入密码提示，也可以自定义。</p>
+<h1 id="4-Https设置"><a href="#4-Https设置" class="headerlink" title="4. Https设置"></a>4. Https设置</h1><p>上述加密设置完成以后，发现在一些浏览器当中访问时输入密码后没有响应。经研究发现，要支持这样的加密设置，一方面需要比较新版的浏览器支持，另一方面需要将网站设置为Https站点，具体方法如下：</p>
+<h2 id="SSL证书"><a href="#SSL证书" class="headerlink" title="SSL证书"></a>SSL证书</h2><p>在阿里云上搜索并购买SSL证书，可以选择个人免费版（Symantec单域名）。根据提示操作，进行证书的创建、验证和部署，跟网站的域名进行绑定。</p>
+<h2 id="Github设置"><a href="#Github设置" class="headerlink" title="Github设置"></a>Github设置</h2><p>在Github项目的Settings当中找到的Github Pages设置，在其中勾选强制HTTPS（Enforce HTTPS）选项，这样，访问网站时会强制使用Https方式。</p>
+<p>上述两项设置完成之后，文章加解密功能就可以正常生效了。</p>
+<h1 id="5-参考资料"><a href="#5-参考资料" class="headerlink" title="5. 参考资料"></a>5. 参考资料</h1><p><a href="https://github.com/MikeCoder/hexo-blog-encrypt/blob/master/ReadMe.zh.md" target="_blank" rel="noopener">插件的Github说明文档</a></p>
+
       
     </div>
     
     
     
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/Hexo/" rel="tag"># Hexo</a>
+          
+            <a href="/tags/encrypt/" rel="tag"># encrypt</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2020/02/12/display-reading-statistics-in-the-next-theme/" rel="next" title="NexT主题中显示文章阅读量统计">
+                <i class="fa fa-chevron-left"></i> NexT主题中显示文章阅读量统计
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
   </div>
 
 
@@ -289,6 +460,10 @@
 
 
           
+
+  
+
+
 
         </div>
         
@@ -309,8 +484,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <section class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -392,6 +576,22 @@
         </div>
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#1-安装插件"><span class="nav-number">1.</span> <span class="nav-text">1. 安装插件</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#2-添加密码"><span class="nav-number">2.</span> <span class="nav-text">2. 添加密码</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#3-修改提示"><span class="nav-number">3.</span> <span class="nav-text">3. 修改提示</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#4-Https设置"><span class="nav-number">4.</span> <span class="nav-text">4. Https设置</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#SSL证书"><span class="nav-number">4.1.</span> <span class="nav-text">SSL证书</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Github设置"><span class="nav-number">4.2.</span> <span class="nav-text">Github设置</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#5-参考资料"><span class="nav-number">5.</span> <span class="nav-text">5. 参考资料</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
